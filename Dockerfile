@@ -4,11 +4,7 @@ FROM python:3.12-slim
 WORKDIR /application
 #sets the working directory for subsequent commands in the docker file
 
-RUN pip install -r requirements.txt
-#runs a command inside the container during the build process
 
-COPY requirements.txt requirements.txt
-#copies files from the local directory to the docker image
 
 COPY . . 
 
